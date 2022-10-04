@@ -60,6 +60,12 @@ function ImageGallery({ keyword, page, setPage, images, setImages }) {
   );
 }
 
-ImageGallery.propTypes = { keyword: PropTypes.string.isRequired };
+ImageGallery.propTypes = {
+  keyword: PropTypes.string.isRequired,
+  setPage: PropTypes.func.isRequired,
+  page: PropTypes.number.isRequired,
+  images: PropTypes.array.isRequired,
+  setImages: PropTypes.func.isRequired,
+};
 
 export default ImageGallery;
